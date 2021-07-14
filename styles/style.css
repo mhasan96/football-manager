@@ -1,0 +1,29 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+}
+.home-page {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #2d25a0;
+  height: 677px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+}
+.title {
+  font-size: 64px;
+  color: white;
+  margin: 207px 102px 0px 156px;
+}
+a {
+  text-decoration: none;
+  margin-left: 156px;
+}
+.home-image img {
+  width: 556.01px;
+  height: 438px;
+  margin-top: 153px;
+  margin-right: 141px;
+  margin-bottom: 86px;
+}
