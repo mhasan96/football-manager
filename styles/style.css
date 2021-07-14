@@ -2,7 +2,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0px;
 }
-/* Front-side-Design */
+/* Front-side-Design-Starts */
 .home-page {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -42,10 +42,11 @@ a {
   margin-top: 133px;
   margin-left: 202px;
   margin-right: 141px;
-  margin-bottom: 86px;
+  margin-bottom: 70px;
 }
+/* Front-side-Design-Starts */
 
-/* Player- Info - Design */
+/* Player- Info - Design-Starts */
 .container {
   display: flex;
   justify-content: center;
@@ -56,6 +57,8 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 30px;
+  margin-right: 210px;
+  margin-left: 180px;
 }
 
 .player {
@@ -69,25 +72,36 @@ a {
 .player img {
   width: 100%;
 }
-/* Stadium */
-.stadiums {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-.stadium-img img {
-  width: 100%;
-}
-.stadium-img {
-  margin: 20px;
-}
+/* Player- Info - Design-Ends */
+/* Stadium-Starts */
 .stadium-list {
   text-align: center;
   font-size: 60px;
 }
+.stadiums {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.stadium-img {
+  margin: 20px;
+}
+.stadium-img img {
+  width: 100%;
+}
+
+.stadium-name {
+  font-size: 2em;
+}
 .stadium-name {
   text-align: center;
 }
-/* Watch-Live */
+/* Stadium-Starts */
+/* horizontal-line-design */
+hr {
+  border: 1px solid #d1d1d1;
+  width: 807px;
+}
+/* Watch-Live-Starts */
 
 .watch-live-game {
   margin-bottom: 100px;
@@ -98,6 +112,14 @@ a {
 }
 .live {
   margin-left: 100px;
+  width: 100%;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.live iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 .match-schedule {
   box-shadow: 5px 5px 40px silver;
@@ -107,17 +129,16 @@ a {
   margin-right: 100px;
   padding-left: 180px;
   padding-right: 150px;
-  padding-top: 50px;
+  padding-top: 200px;
   margin-bottom: 100px;
 }
 .match-time {
   font-size: 50px;
 }
-.stadium-name {
-  font-size: 2em;
-}
 
-/* Footer-Design */
+/* Watch-Live-Ends */
+
+/* Footer-Design-Starts */
 
 footer {
   text-align: center;
@@ -161,30 +182,45 @@ ul {
   margin-left: 30px;
   margin-right: 30px;
 }
+/* Footer-Design-Ends */
 
-/* Media Queries */
+/* Media Queries-Starts */
 @media only screen and (max-width: 481px) {
   .home-page,
   .players,
   .stadiums,
-  .watch-live {
+  .watch-live,
+  .logo,
+  .ul {
+    margin-left: 50px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
   .live {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
+    width: 90%;
     height: 0;
+    margin-left: 20px;
+    padding-bottom: 56.25%;
+    position: relative;
   }
-  .live iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  .match-schedule {
+    box-shadow: 5px 5px 40px silver;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 50px;
+    margin-bottom: 10px;
   }
-
+  .match-time {
+    font-size: 20px;
+  }
+  .footer-logo {
+    width: 325px;
+    height: 100px;
+  }
   .home-image img {
     width: 329px;
     height: 259px;
@@ -200,3 +236,4 @@ ul {
     padding: 10px 24px;
   }
 }
+/* Media Queries Ends */
